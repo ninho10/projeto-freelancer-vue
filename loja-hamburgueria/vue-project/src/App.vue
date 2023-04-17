@@ -1,7 +1,7 @@
 
 <template>
-  <div>
-  <navbar/>
+  <div> 
+  <navbar :logo="logo_src" :alt="app_name"/>
   <router-view/>
   <Footer/>
   </div>
@@ -18,6 +18,12 @@ export default{
   components:{
     Navbar,
     Footer,
+  },
+  data(){
+    return {
+      logo_src: "img/logo.png",
+      app_name: "Make Your Burger"
+    }
   }
 }
   
