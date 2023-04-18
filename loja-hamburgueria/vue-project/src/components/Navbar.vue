@@ -1,9 +1,9 @@
 <template>
     <div id="nav">
         <router-link to="/" id="logo-url">
-            <img src="logo" :alt="alt" id="logo">
+            <img src="img/logo.png" :alt="alt" id="logo">
         </router-link>
-        <RouterLink to="/">Home</RouterLink>|
+        <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/pedidos">Pedidos</RouterLink> 
     </div> 
     
@@ -26,10 +26,20 @@ export default {
   align-items: center;
 }
 
-#logo-url{
+#nav #logo-url{
     margin:auto;
     margin-left: 0;
 } 
 
+#logo{
+    width: 40px;
+    height: 40px;
+}
+
+#nav a{
+    color: yellow;
+    text-decoration: none;
+    margin: 12px;
+}
 
 </style>

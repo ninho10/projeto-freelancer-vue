@@ -1,7 +1,7 @@
 
 <template>
   <div> 
-  <navbar :logo="logo_src" :alt="app_name"/>
+  <navbar/>
   <router-view/>
   <Footer/>
   </div>
@@ -21,8 +21,7 @@ export default{
   },
   data(){
     return {
-      logo_src: "img/logo.png",
-      app_name: "Make Your Burger"
+
     }
   }
 }
@@ -32,6 +31,23 @@ export default{
 
 
 <style scoped>
+*{
+  font-family: Helvetica;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container{
+  margin: 50px;
+  min-height: 250px;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: #222;
+
+}
+
 
 
 </style>
